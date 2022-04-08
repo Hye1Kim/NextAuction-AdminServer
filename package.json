@@ -1,0 +1,32 @@
+{
+  "name": "admin-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "atob": "^2.1.2",
+    "axios": "^0.24.0",
+    "br2k-was": "^0.2.1",
+    "caver-js": "^1.6.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "klay-did-auth": "^1.0.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "mysql2": "^2.3.2",
+    "parser": "^0.1.4",
+    "request": "^2.88.2",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  }
+}

@@ -1,0 +1,59 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 1000
+    },
+    "auditLog": "log/.58b68bf5b54b65932c55f06fe24ddf2df2452293-audit.json",
+    "files": [
+        {
+            "date": 1637311589123,
+            "name": "log/contents-sever-2021-11-19.log",
+            "hash": "07d297fe1bcbf6676f240f328d87d4e9"
+        },
+        {
+            "date": 1637655573250,
+            "name": "log/contents-sever-2021-11-23.log",
+            "hash": "b33f0cb1ea1c25c25348f484cfcb31b4"
+        },
+        {
+            "date": 1637747839952,
+            "name": "log/contents-sever-2021-11-24.log",
+            "hash": "918115c2f189b60cd7ea83a4a65a6b1c"
+        },
+        {
+            "date": 1637826056547,
+            "name": "log/contents-sever-2021-11-25.log",
+            "hash": "795044cd179b9fad304e2b722350a921"
+        },
+        {
+            "date": 1638431423352,
+            "name": "log/contents-sever-2021-12-02.log",
+            "hash": "1837f67b6100d4fab3bd075c9c26ccd7"
+        },
+        {
+            "date": 1639238160134,
+            "name": "log/contents-sever-2021-12-12.log",
+            "hash": "4faa13ce6dd2026118e1cd78cb61876b"
+        },
+        {
+            "date": 1639323982407,
+            "name": "log/contents-sever-2021-12-13.log",
+            "hash": "d2e12ed662856a658e1d071e04a29a69"
+        },
+        {
+            "date": 1639461306289,
+            "name": "log/contents-sever-2021-12-14.log",
+            "hash": "d88b314159dd906a953ad14fe05cdf17"
+        },
+        {
+            "date": 1639566921491,
+            "name": "log/contents-sever-2021-12-15.log",
+            "hash": "0aeeb0914cf2da2f76b33af18f5ab8ef"
+        },
+        {
+            "date": 1639635117352,
+            "name": "log/contents-sever-2021-12-16.log",
+            "hash": "b6397677472d6e3e4ec8f8a166e25a42"
+        }
+    ]
+}

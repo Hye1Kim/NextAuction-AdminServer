@@ -1,0 +1,4 @@
+name: 'harbor-k8s'
+endpoint: '192.168.0.111'
+user: admin
+ 

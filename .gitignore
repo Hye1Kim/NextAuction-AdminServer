@@ -1,0 +1,9 @@
+node_modules
+truffle-config.js
+util/k8s
+util/docker
+spcecific-document-example
+test
+context.yaml
+migrations
+contracts

@@ -1,0 +1,11 @@
+Service:
+  id: 'auction-3' #runime-config service-registry / id
+  service-account: '0x67a134358367ba2f20098bd80a3064d7f55965dc' 
+  company-name: 'pslab'
+  company-email: 'alsldjcjstk@cicweb.ulsan.ac.kr'
+  company-contact: '010-4181-2358'
+  description: 'app is test-app'
+  image: 'khw0114/auction-server'
+  image-access-user: khw0114 #habor
+
+

@@ -1,0 +1,627 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			}
+		],
+		"name": "stopService",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "uint256"
+			}
+		],
+		"name": "setTemp",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"name": "id",
+								"type": "string"
+							},
+							{
+								"name": "manager",
+								"type": "address"
+							},
+							{
+								"name": "serviceAccount",
+								"type": "address"
+							},
+							{
+								"name": "companyName",
+								"type": "string"
+							},
+							{
+								"name": "companyEmail",
+								"type": "string"
+							},
+							{
+								"name": "companyContact",
+								"type": "string"
+							},
+							{
+								"name": "description",
+								"type": "string"
+							}
+						],
+						"name": "header",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"name": "image",
+										"type": "string"
+									},
+									{
+										"name": "imageAccessUser",
+										"type": "string"
+									}
+								],
+								"name": "ct",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"name": "location",
+										"type": "string[]"
+									},
+									{
+										"name": "accessToken",
+										"type": "string"
+									},
+									{
+										"name": "nodeID",
+										"type": "string"
+									},
+									{
+										"name": "networkID",
+										"type": "string"
+									},
+									{
+										"name": "serviceProtocol",
+										"type": "string"
+									},
+									{
+										"name": "servicePoints",
+										"type": "string[]"
+									},
+									{
+										"name": "servicePort",
+										"type": "string"
+									},
+									{
+										"name": "nodeMountService",
+										"type": "string"
+									},
+									{
+										"name": "nodeMountETCD",
+										"type": "string"
+									},
+									{
+										"name": "secret",
+										"type": "string"
+									}
+								],
+								"name": "kct",
+								"type": "tuple"
+							}
+						],
+						"name": "runtime",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"name": "logs",
+								"type": "string[]"
+							}
+						],
+						"name": "backup",
+						"type": "tuple"
+					},
+					{
+						"name": "state",
+						"type": "uint8"
+					},
+					{
+						"name": "curReplicas",
+						"type": "uint256"
+					},
+					{
+						"name": "serviceLocationIndex",
+						"type": "uint256"
+					},
+					{
+						"name": "serviceStartTime",
+						"type": "uint256"
+					},
+					{
+						"name": "serviceEndTime",
+						"type": "uint256"
+					}
+				],
+				"name": "service",
+				"type": "tuple"
+			}
+		],
+		"name": "register",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"components": [
+					{
+						"name": "image",
+						"type": "string"
+					},
+					{
+						"name": "imageAccessUser",
+						"type": "string"
+					}
+				],
+				"name": "container",
+				"type": "tuple"
+			}
+		],
+		"name": "updateContainer",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			}
+		],
+		"name": "getAllBackupLogs",
+		"outputs": [
+			{
+				"name": "logs",
+				"type": "string[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			}
+		],
+		"name": "getServiceLocation",
+		"outputs": [
+			{
+				"name": "protocol",
+				"type": "string"
+			},
+			{
+				"name": "point",
+				"type": "string"
+			},
+			{
+				"name": "port",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			}
+		],
+		"name": "getService",
+		"outputs": [
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"name": "id",
+								"type": "string"
+							},
+							{
+								"name": "manager",
+								"type": "address"
+							},
+							{
+								"name": "serviceAccount",
+								"type": "address"
+							},
+							{
+								"name": "companyName",
+								"type": "string"
+							},
+							{
+								"name": "companyEmail",
+								"type": "string"
+							},
+							{
+								"name": "companyContact",
+								"type": "string"
+							},
+							{
+								"name": "description",
+								"type": "string"
+							}
+						],
+						"name": "header",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"name": "image",
+										"type": "string"
+									},
+									{
+										"name": "imageAccessUser",
+										"type": "string"
+									}
+								],
+								"name": "ct",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"name": "location",
+										"type": "string[]"
+									},
+									{
+										"name": "accessToken",
+										"type": "string"
+									},
+									{
+										"name": "nodeID",
+										"type": "string"
+									},
+									{
+										"name": "networkID",
+										"type": "string"
+									},
+									{
+										"name": "serviceProtocol",
+										"type": "string"
+									},
+									{
+										"name": "servicePoints",
+										"type": "string[]"
+									},
+									{
+										"name": "servicePort",
+										"type": "string"
+									},
+									{
+										"name": "nodeMountService",
+										"type": "string"
+									},
+									{
+										"name": "nodeMountETCD",
+										"type": "string"
+									},
+									{
+										"name": "secret",
+										"type": "string"
+									}
+								],
+								"name": "kct",
+								"type": "tuple"
+							}
+						],
+						"name": "runtime",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"name": "logs",
+								"type": "string[]"
+							}
+						],
+						"name": "backup",
+						"type": "tuple"
+					},
+					{
+						"name": "state",
+						"type": "uint8"
+					},
+					{
+						"name": "curReplicas",
+						"type": "uint256"
+					},
+					{
+						"name": "serviceLocationIndex",
+						"type": "uint256"
+					},
+					{
+						"name": "serviceStartTime",
+						"type": "uint256"
+					},
+					{
+						"name": "serviceEndTime",
+						"type": "uint256"
+					}
+				],
+				"name": "service",
+				"type": "tuple"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getTemp",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"name": "secret",
+				"type": "string"
+			},
+			{
+				"name": "replicas",
+				"type": "uint256"
+			}
+		],
+		"name": "startService",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"name": "log",
+				"type": "string"
+			}
+		],
+		"name": "backupLog",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			}
+		],
+		"name": "pauseService",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			}
+		],
+		"name": "getLatestBackupLogs",
+		"outputs": [
+			{
+				"name": "log",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"components": [
+					{
+						"name": "location",
+						"type": "string[]"
+					},
+					{
+						"name": "accessToken",
+						"type": "string"
+					},
+					{
+						"name": "nodeID",
+						"type": "string"
+					},
+					{
+						"name": "networkID",
+						"type": "string"
+					},
+					{
+						"name": "serviceProtocol",
+						"type": "string"
+					},
+					{
+						"name": "servicePoints",
+						"type": "string[]"
+					},
+					{
+						"name": "servicePort",
+						"type": "string"
+					},
+					{
+						"name": "nodeMountService",
+						"type": "string"
+					},
+					{
+						"name": "nodeMountETCD",
+						"type": "string"
+					},
+					{
+						"name": "secret",
+						"type": "string"
+					}
+				],
+				"name": "kubeContext",
+				"type": "tuple"
+			}
+		],
+		"name": "updateKubeContext",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"name": "replicas",
+				"type": "uint256"
+			}
+		],
+		"name": "updateReplicas",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getServiceList",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"name": "curIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "updateServiceLocation",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "serviceID",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "changeType",
+				"type": "string"
+			}
+		],
+		"name": "ChangeService",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "serviceID",
+				"type": "string"
+			}
+		],
+		"name": "NewService",
+		"type": "event"
+	}
+]

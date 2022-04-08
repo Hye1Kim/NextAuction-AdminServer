@@ -1,0 +1,445 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "addr",
+				"type": "address"
+			},
+			{
+				"name": "controller",
+				"type": "string"
+			}
+		],
+		"name": "addAddrKey",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "addr",
+				"type": "address"
+			},
+			{
+				"name": "controller",
+				"type": "string"
+			},
+			{
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "addAddrKeyBySign",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "d id",
+				"type": "string"
+			},
+			{
+				"name": "pubKey",
+				"type": "string"
+			},
+			{
+				"name": "controller",
+				"type": "string"
+			}
+		],
+		"name": "addPubKey",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "pubKey",
+				"type": "string"
+			},
+			{
+				"name": "controller",
+				"type": "string"
+			},
+			{
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "addPubKeyBySign",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "scvID",
+				"type": "string"
+			},
+			{
+				"name": "scvType",
+				"type": "string"
+			},
+			{
+				"name": "scvEndpoint",
+				"type": "string"
+			}
+		],
+		"name": "addService",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "scvID",
+				"type": "string"
+			},
+			{
+				"name": "scvType",
+				"type": "string"
+			},
+			{
+				"name": "scvEndpoint",
+				"type": "string"
+			},
+			{
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "addServiceBySign",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "create",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			}
+		],
+		"name": "deactivatedDom",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "targetId",
+				"type": "string"
+			},
+			{
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "disableKey",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "targetId",
+				"type": "string"
+			}
+		],
+		"name": "disableKey",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "targetId",
+				"type": "string"
+			}
+		],
+		"name": "disableService",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "targetId",
+				"type": "string"
+			},
+			{
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "disableService",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "delegate",
+				"type": "string"
+			}
+		],
+		"name": "setController",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			},
+			{
+				"name": "delegate",
+				"type": "string"
+			},
+			{
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "setControllerBySign",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "did",
+				"type": "string"
+			}
+		],
+		"name": "getDocument",
+		"outputs": [
+			{
+				"components": [
+					{
+						"name": "contexts",
+						"type": "string[]"
+					},
+					{
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"name": "controller",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"name": "id",
+								"type": "string"
+							},
+							{
+								"name": "keyType",
+								"type": "string"
+							},
+							{
+								"name": "controller",
+								"type": "string"
+							},
+							{
+								"name": "pubKeyData",
+								"type": "string"
+							},
+							{
+								"name": "disable",
+								"type": "bool"
+							}
+						],
+						"name": "publicKeys",
+						"type": "tuple[]"
+					},
+					{
+						"components": [
+							{
+								"name": "id",
+								"type": "string"
+							},
+							{
+								"name": "serviceType",
+								"type": "string"
+							},
+							{
+								"name": "serviceEndPoint",
+								"type": "string"
+							},
+							{
+								"name": "disable",
+								"type": "bool"
+							}
+						],
+						"name": "services",
+						"type": "tuple[]"
+					}
+				],
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "nonce",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

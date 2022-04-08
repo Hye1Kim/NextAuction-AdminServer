@@ -1,0 +1,6 @@
+name: 'auction' #namespace
+replicas: 8 #max
+isMax: true
+ports:
+- 3002
+isReplace: true

@@ -1,0 +1,23 @@
+name: mysql
+image: mysql:8.0
+ports:
+  - containerPort: 3306
+    name: client
+    protocol: TCP
+  - containerPort: 8080
+    name: tomcat
+    protocol: TCP
+env:
+  - name: MYSQL_ROOT_PASSWORD
+    value: "root"
+  - name: MYSQL_DATABASE
+    value: "auction"
+  - name: MYSQL_USER
+    value: "pslab"
+  - name: MYSQL_PASSWORD
+    value: "pslab"
+
+
+# reference https://postlude.github.io/2021/08/10/k8s-mysql/
+#           https://kubernetes.io/docs/concepts/storage/volumes/#local            
+

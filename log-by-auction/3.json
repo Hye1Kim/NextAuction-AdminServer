@@ -1,0 +1,18 @@
+{
+    "auciton-nft": 3,
+    "seller": "0x180150aa48b9ebae77e569eacc31c807f81d2031",
+    "start-time": "2021-12-15T11:28:53.456Z",
+    "auciton-meta": {
+        "nft": 3,
+        "name": "br2k_test1.jpg",
+        "minPrice": 0,
+        "timestamp": 1637822772,
+        "desc": "THIS IS AUCTION",
+        "contentOwner": "0x180150aa48b9ebae77e569eacc31c807f81d2031",
+        "contentCreator": "0x180150aa48b9ebae77e569eacc31c807f81d2031",
+        "owner": "0x180150aa48b9ebae77e569eacc31c807f81d2031"
+    },
+    "history": [
+        "[11][Bidding][0xd8648d669a52aa6807511c9e668de61ccad3b4df][start: bidding, amount 0]"
+    ]
+}

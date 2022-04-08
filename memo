@@ -1,0 +1,7 @@
+kubectl logs auction-22 service -n auction
+kubectl get pods -n auction
+
+
+sudo docker build --tag khw0114/auction:0.7 .
+sudo docker push khw0114/auction:0.7
+br2k spray -r 5 -i khw0114/auction:0.6 
