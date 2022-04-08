@@ -10,7 +10,7 @@ change accesstoken
 
 ```
 //docker 실행
-docker run --name mysql-db -v /(HOME PATH)/project/test/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=auction -e MYSQL_USER=pslab -e MYSQL_PASSWORD=pslab --restart=always -p 3306:3306 -p 8080:8080 -d mysql
+docker run --name mysql-db -v ./test/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=auction -e MYSQL_USER=pslab -e MYSQL_PASSWORD=pslab --restart=always -p 3306:3306 -p 8080:8080 -d mysql
 //mysql 실행
 sudo docker exec -it mysql-db bash
 //로그인
