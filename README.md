@@ -1,7 +1,7 @@
 ```
 kubectl delete namespaces auction-namespace
 kubectl delete clusterrolebindings auction-namespace-binding-8
-br2k ask-context -f context-ask.yaml -r http://203.250.77.154:9000/context
+br2k ask-context -f context-ask.yaml -r http://(ip):9000/context
 change accesstoken
 ```
 
@@ -10,7 +10,7 @@ change accesstoken
 
 ```
 //docker 실행
-docker run --name mysql-db -v /home/hyewon/project/test/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=auction -e MYSQL_USER=pslab -e MYSQL_PASSWORD=pslab --restart=always -p 3306:3306 -p 8080:8080 -d mysql
+docker run --name mysql-db -v /(HOME PATH)/project/test/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=auction -e MYSQL_USER=pslab -e MYSQL_PASSWORD=pslab --restart=always -p 3306:3306 -p 8080:8080 -d mysql
 //mysql 실행
 sudo docker exec -it mysql-db bash
 //로그인
